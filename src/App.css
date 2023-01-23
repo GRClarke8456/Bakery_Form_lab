@@ -7,7 +7,7 @@ main {
 .recipe_cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    /* grid-gap: 20px; */
 }
 
 h1 {
