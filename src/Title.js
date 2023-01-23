@@ -1,6 +1,6 @@
 const Title = () => {
 
-    return <h1>BNTA Bakery</h1>
+    return <h1>Georgia and Rimm's Bakery</h1>
 
 }
 

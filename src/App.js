@@ -2,9 +2,21 @@ import NavBar from "./NavBar";
 import Title from "./Title";
 import RecipeList from "./RecipeList";
 import Search from "./Search";
-import CakeForm from "./CakeForm";
+import CakeForm from "./components/CakeForm";
+import { useState } from "react";
 
-function App() {
+const App = () => {
+
+  const [recipes, setRecipes] = useState ([
+    {
+
+    }
+  ])
+
+  const addNewRecipe = (newRecipe) => {
+    setRecipes([...recipes, newRecipe]);
+  }
+
   return (
     <>
       <header>
