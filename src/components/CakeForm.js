@@ -9,13 +9,18 @@ const CakeForm = ({addNewRecipe}) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const newUser = {
+        const newRecipe = {
             cakeName: cakeName,
             ingredients: ingredients,
             rating: rating
         }
 
         addNewRecipe(newRecipe);
+    }
+
+    const turnStringToArray = (inputString) => {
+       let ingredients = inputString.split(",");
+       return ingredients
     }
 
     return (
@@ -33,7 +38,7 @@ const CakeForm = ({addNewRecipe}) => {
             <label htmlFor="ingredients">Ingredients:</label>
             <textarea cols="30" rows="1" id="ingredients"
                      placeholder="List of Ingredients"
-                    onChange={(event) => setIngredients(event.target.value)}
+                    onChange={(event) => setIngredients(turnStringToArray(event.target.value))}
                     value ={ingredients} ></textarea>
             
             <label htmlFor="rating">Rating:</label>
