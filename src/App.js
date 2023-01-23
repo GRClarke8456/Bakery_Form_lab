@@ -4,6 +4,7 @@ import Title from "./Title";
 import Search from "./Search";
 import CakeForm from "./components/CakeForm";
 import Recipes from "./components/Recipes";
+import "./App.css";
 import { useState } from "react";
 
 const App = () => {

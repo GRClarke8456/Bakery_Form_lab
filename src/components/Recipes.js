@@ -1,5 +1,6 @@
 const Recipes = ({recipes}) => {
     return (
+        <div className="recipe_cards">
         <ul>
             {recipes.map((recipe) => {
                 return <>
@@ -14,6 +15,7 @@ const Recipes = ({recipes}) => {
                 </>
             })}
         </ul>
+        </div>
     )
 }
 export default Recipes;
